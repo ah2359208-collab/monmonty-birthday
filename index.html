@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21172d">
+  <title>Happy Birthday Monmonty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#160f20;--panel:#24182e;--pink:#f3a8c8;--rose:#d96e9f;--cream:#fff4f7;--gold:#e8c78b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 5%,#44233f 0,transparent 32%),radial-gradient(circle at 90% 35%,#302044 0,transparent 30%),var(--bg);color:var(--cream);font-family:Cairo,Arial,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:35px 35px}
+    .wrap{width:min(1050px,92%);margin:auto}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:48px 18px;position:relative}
+    .hero-card{max-width:760px;padding:42px 24px;border:1px solid #ffffff25;border-radius:28px;background:#ffffff0b;backdrop-filter:blur(10px);box-shadow:0 25px 80px #0005}
+    .eyebrow{color:var(--gold);letter-spacing:3px;font:600 12px "Playfair Display",serif;text-transform:uppercase}
+    h1{font-size:clamp(42px,9vw,82px);line-height:1.12;margin:15px 0;color:var(--pink);text-shadow:0 5px 30px #f08ab455}
+    .sub{font-size:clamp(16px,3vw,21px);color:#f9e8ef;line-height:2;margin:10px auto 26px}
+    .heart{font-size:34px;animation:pulse 1.3s infinite;display:inline-block}@keyframes pulse{50%{transform:scale(1.22)}}
+    button,.btn{border:0;border-radius:999px;background:linear-gradient(135deg,#f3a8c8,#b94f86);color:#241321;padding:13px 25px;font:800 15px Cairo;cursor:pointer;box-shadow:0 8px 25px #d96e9f35;transition:.2s;text-decoration:none;display:inline-block}
+    button:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    .hint{font-size:12px;color:#d9bdcb;margin-top:14px}
+    section{padding:78px 0;position:relative}.section-title{text-align:center;margin:0 0 12px;font-size:clamp(28px,5vw,42px);color:var(--pink)}
+    .section-lead{text-align:center;color:#e9d5df;margin:0 auto 34px;max-width:650px;line-height:2}
+    .letter{max-width:760px;margin:auto;background:linear-gradient(145deg,#fff5f7,#f7dce8);color:#44263a;border-radius:22px;padding:clamp(24px,5vw,48px);box-shadow:0 22px 60px #0004;position:relative}
+    .letter:before{content:"";position:absolute;inset:10px;border:1px solid #d995b3;border-radius:15px;pointer-events:none}
+    .letter h3{margin:0 0 12px;color:#a54475;font-size:24px}.letter p{line-height:2.1;margin:8px 0;font-size:16px}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.photo{padding:7px;background:#fff;border-radius:15px;box-shadow:0 12px 30px #0005;transform:rotate(var(--r,0deg));transition:.25s;cursor:pointer}
+    .photo:hover{transform:rotate(0) scale(1.04);z-index:2}.photo img{width:100%;height:260px;object-fit:cover;border-radius:9px;display:block}.photo:nth-child(3n){--r:1.3deg}.photo:nth-child(2n){--r:-1deg}
+    .videos{display:grid;grid-template-columns:1fr 1fr;gap:18px}.videos video{width:100%;border-radius:18px;background:#000;box-shadow:0 15px 35px #0005}
+    .surprise{text-align:center;max-width:720px;margin:auto;padding:34px 20px;border:1px solid #ffffff24;border-radius:24px;background:#ffffff0a}
+    .surprise p{line-height:2;color:#f6e4ed}.hidden-message{display:none;margin:20px auto 0;padding:22px;border-radius:18px;background:#fff1f6;color:#512d43;line-height:2;max-width:560px}
+    .hidden-message.show{display:block;animation:appear .45s ease}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    footer{text-align:center;padding:45px 15px 65px;color:#d8bdcc}.footer-name{font:700 28px "Playfair Display",serif;color:var(--pink)}
+    .lightbox{position:fixed;inset:0;background:#08050deF;display:none;place-items:center;z-index:10;padding:20px}.lightbox.open{display:grid}.lightbox img{max-width:min(92vw,900px);max-height:85vh;object-fit:contain;border-radius:12px}.close{position:absolute;top:18px;left:18px;background:#fff;color:#241321;padding:8px 15px}
+    .floating{position:fixed;bottom:15px;left:15px;z-index:5;background:#ffffff18;color:#fff;border:1px solid #ffffff30;box-shadow:none;padding:10px 16px;font-size:12px}
+    @media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr)}.photo img{height:230px}.videos{grid-template-columns:1fr}.hero-card{padding:34px 18px}}
+    @media(max-width:390px){.photo img{height:190px}}
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero-card">
+      <div class="eyebrow">A little surprise, made with love</div>
+      <div class="heart">♥</div>
+      <h1>Happy Birthday<br>Monmonty</h1>
+      <p class="sub">كل سنة وإنتِ أجمل حكاية في حياتنا<br>النهارده يوم مميز عشان اتولدت فيه ضحكتك</p>
+      <button onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">افتحي مفاجأتك</button>
+      <div class="hint">استعدي لرحلة صغيرة بين الصور والذكريات</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="letter">
+      <h2 class="section-title">رسالة ليكي</h2>
+      <p class="section-lead">كلام من القلب في يومك المميز</p>
+      <div class="letter">
+        <h3>إلى Monmonty ❤️</h3>
+        <p>كل سنة وإنتِ طيبة، وكل سنة وإنتِ منورة حياتنا بوجودك وضحكتك وروحك الحلوة.</p>
+        <p>أتمنى لك سنة جديدة مليانة راحة بال وفرحة ونجاح، وتفضلي دايمًا محاطة بالحب والناس اللي بيحبوكي. ربنا يحقق لك كل اللي بتتمنيه، ويخلي أيامك كلها شبه قلبك: جميلة وحنينة.</p>
+        <p>أجمل الذكريات هي اللي بنعيشها سوا، ولسه قدامنا حكايات وصور وضحكات كتير.</p>
+        <p><strong>عيد ميلاد سعيد يا Monmonty ❤️</strong></p>
+      </div>
+    </section>
+
+    <section id="memories">
+      <h2 class="section-title">Our Memories</h2>
+      <p class="section-lead">لحظات صغيرة، لكنها غالية وتستاهل تفضل معانا دايمًا</p>
+      <div class="gallery">
+        <div class="photo"><img src="assets/photo-01.jpg" alt="ذكرى عيد الميلاد" loading="lazy"></div>
+        <div class="photo"><img src="assets/photo-02.jpg" alt="ذكرى عيد الميلاد" loading="lazy"></div>
+        <div class="photo"><img src="assets/photo-03.jpg" alt="ذكرى عائلية" loading="lazy"></div>
+        <div class="photo"><img src="assets/photo-04.jpg" alt="ذكرى عائلية" loading="lazy"></div>
+        <div class="photo"><img src="assets/photo-05.jpg" alt="ذكرى عائلية" loading="lazy"></div>
+        <div class="photo"><img src="assets/photo-06.jpg" alt="صورة معًا" loading="lazy"></div>
+        <div class="photo"><img src="assets/photo-07.jpg" alt="ذكرى جميلة" loading="lazy"></div>
+        <div class="photo"><img src="assets/photo-08.jpg" alt="ذكرى جميلة" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="videos">
+      <h2 class="section-title">لحظات متحركة</h2>
+      <p class="section-lead">الفيديوهات اللي بتحفظ تفاصيل وذكريات أكتر من أي كلام</p>
+      <div class="videos">
+        <video controls playsinline preload="metadata"><source src="assets/memory-01.mp4" type="video/mp4"></video>
+        <video controls playsinline preload="metadata"><source src="assets/memory-02.mp4" type="video/mp4"></video>
+      </div>
+    </section>
+
+    <section id="surprise">
+      <h2 class="section-title">لسه في مفاجأة</h2>
+      <p class="section-lead">اضغطي على الزر واكتشفي آخر رسالة</p>
+      <div class="surprise">
+        <div class="heart">♥</div>
+        <p>فيه أمنية واحدة ليكي النهارده...</p>
+        <button id="reveal">اكشفي المفاجأة</button>
+        <div class="hidden-message" id="secret">
+          أتمنى تفضلي دايمًا مبسوطة ومطمنة، وتفضلي شايفة نفسك بعين كل اللي بيحبوكي. وجودك نعمة، وكل سنة وإنتِ بخير وسعادة. ❤️
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-name">❤️ Monmonty</div>
+    <div>Made with love, just for your birthday.</div>
+  </footer>
+  <div class="lightbox" id="lightbox"><button class="close" id="close">إغلاق ✕</button><img id="large" alt="صورة مكبرة"></div>
+  <button class="floating" onclick="document.getElementById('top').scrollIntoView({behavior:'smooth'})">للأعلى ↑</button>
+  <script>
+    document.querySelectorAll('.photo img').forEach(img => img.addEventListener('click', () => {
+      document.getElementById('large').src = img.src;
+      document.getElementById('lightbox').classList.add('open');
+    }));
+    document.getElementById('close').addEventListener('click', () => document.getElementById('lightbox').classList.remove('open'));
+    document.getElementById('lightbox').addEventListener('click', e => { if(e.target.id === 'lightbox') e.currentTarget.classList.remove('open'); });
+    document.getElementById('reveal').addEventListener('click', () => {
+      document.getElementById('secret').classList.toggle('show');
+      document.getElementById('reveal').textContent = document.getElementById('secret').classList.contains('show') ? 'اقفلي المفاجأة' : 'اكشفي المفاجأة';
+    });
+  </script>
+</body>
+</html>
